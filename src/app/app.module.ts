@@ -1,7 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AdviceBoxModule } from './components/advice-box/advice-box.module';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,8 +10,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AdviceBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,19 @@
+<section *ngIf="this.haveResponse | async">
+    <div class="advice-container">
+        <span>advice #{{ this.adviceObject.slip.id }}</span>
+
+        <p>"{{this.adviceObject.slip.advice}}"</p>
+    </div>
+
+    <div class="divider desktop">
+        <img src="../../../assets/pattern-divider-desktop.svg" alt="divider">
+    </div>
+
+    <div class="divider mobile">
+        <img src="../../../assets/pattern-divider-mobile.svg" alt="divider">
+    </div>
+
+    <div class="icon-dice-container" (click)="this.onChangeAdvice()">
+        <img class="icon-dice" src="../../../assets/icon-dice.svg" alt="icon dice">
+    </div>
+</section>

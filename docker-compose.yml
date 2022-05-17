@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    image: advice-generator
+    container_name: advices
+    ports:
+      - "0.0.0.0:4200:4200"
+
+    volumes:
+      - ./:/app

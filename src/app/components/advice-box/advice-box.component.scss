@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$neon-green: hsl(150, 100%, 66%);
+$light-cyan: hsl(193, 38%, 86%);
+
+section{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    position: relative;
+    border-radius: 15px;
+    background-color: $dark-grayish-blue;
+    width: 530px;
+
+    .advice-container{
+        text-align: center;
+        padding: 40px 0;
+
+        span{
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 13px;
+            color: $neon-green;
+        }
+
+        p{
+            font-size: 27px;
+            padding: 30px 40px 80px 40px;
+            color: $light-cyan;
+        }
+    }
+
+    .divider{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 65px;
+
+        img{
+            vertical-align: middle;
+            height: 15px;
+        }
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .icon-dice-container{
+       background-color: $neon-green;
+       cursor: pointer;
+       border-radius: 50%;
+       display: inline-block;
+       position: absolute;
+       width: 70px;
+       height: 70px;
+       text-align: center;
+       bottom: -35px;
+       left: 0;
+       right: 0;
+       margin: 0 auto;
+
+       &:hover{
+        -webkit-box-shadow: 0px 0px 50px 5px $neon-green; 
+        box-shadow: 0px 0px 50px 5px $neon-green;
+       }
+
+       .icon-dice{
+           vertical-align: middle;
+           position: relative;
+           top: 23px;
+       }
+    }
+}
+
+@media screen and (max-width: 768px){
+    section{
+        width: 300px;
+
+        .advice-container{
+            padding: 30px 0;
+
+            span{
+                font-size: 9px;
+                letter-spacing: 3px;
+            }
+
+            p{
+                font-size: 20px;
+                padding: 20px 20px 60px 20px;
+            }
+        }
+
+        .divider{
+            bottom: 55px;
+    
+            img{
+                vertical-align: middle;
+                height: 14px;
+            }
+        }
+
+        .desktop{
+            display: none;
+        }
+
+        .mobile{
+            display: block;
+        }
+
+        .icon-dice-container{
+            width: 60px;
+            height: 60px;
+            bottom: -30px;
+     
+            &:hover{
+             -webkit-box-shadow: 0px 0px 50px 5px $neon-green; 
+             box-shadow: 0px 0px 50px 5px $neon-green;
+            }
+     
+            .icon-dice{
+                top: 18px;
+            }
+         }
+    }
+}

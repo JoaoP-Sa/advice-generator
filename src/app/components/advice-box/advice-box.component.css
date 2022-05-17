@@ -1,0 +1,42 @@
+section {
+  position: relative;
+  border-radius: 15px;
+  background-color: #323a49;
+  width: 530px;
+  min-height: 330px;
+}
+
+section .divider {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 65px;
+}
+
+section .divider img {
+  vertical-align: middle;
+  height: 15px;
+}
+
+section .icon-dice-container {
+  background-color: #52ffa8;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+section .icon-dice-container .icon-dice {
+  vertical-align: middle;
+  position: relative;
+  top: 23px;
+}
+/*# sourceMappingURL=advice-box.component.css.map */
